@@ -1,0 +1,74 @@
+/* CSS Document */
+
+	body
+	{
+	    color:white;
+	    background-color:#0066CC;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:small;
+		
+	}
+	h1
+	{
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:larger;
+		text-align:center;
+		color:#FFFFFF
+	}
+	h2
+	{
+		font-family:Arial, Helvetica, sans-serif;
+
+		font-size:larger;
+		font-style:oblique;
+		color:#00FF00
+	}
+	a:link
+	{
+		color:#33CCFF 
+	}
+	a:visited 
+	{
+    		color:#33CCFF	
+	}
+	address
+	{
+		margin-top: 1em;
+		padding-top: 1em;
+    		border-top: dotted
+	}
+	input 
+	{
+		background:#0066CC;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		color:#FFFFFF;
+		border:outset
+	}
+	textarea
+	{
+		background:#0066CC;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		color:#FFFFFF;
+		border:outset
+	}
+	th
+	{
+		background:#3399FF;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		color:#FFFFFF;
+		font-size:small
+	}
+	td
+	{
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:small;
+		border:0;
+	}
+	select 
+	{
+		background:#003366;
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		color:#FFDDDD;
+		border:outset
+	}
+

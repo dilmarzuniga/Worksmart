@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)http://flowplayer.org/tools/demos/overlay/custom-effect.htm -->
+<HTML><!--
+	This is a jQuery Tools standalone demo. Feel free to copy/paste.
+	                                                         
+	http://flowplayer.org/tools/demos/
+	
+	Do *not* reference CSS files and images from flowplayer.org when in production  
+
+	Enjoy!
+--><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<TITLE>jQuery Tools standalone demo</TITLE>
+
+	<!-- include the Tools -->
+	<SCRIPT src="./jQuery Tools standalone demo_files/jquery.tools.min.js"></SCRIPT>
+	 
+
+	<!-- standalone page styling (can be removed) -->
+	<LINK rel="stylesheet" type="text/css" href="./jQuery Tools standalone demo_files/standalone.css">	
+
+
+	<LINK rel="stylesheet" type="text/css" href="./jQuery Tools standalone demo_files/overlay-basic.css">
+	
+	<STYLE>
+	/* some styling for triggers */
+	#triggers {
+		text-align:center;
+	}
+	
+	#triggers img {
+		cursor:pointer;
+		margin:0 5px;
+		background-color:#fff;
+		border:1px solid #ccc;
+		padding:2px;
+	
+		-moz-border-radius:4px;
+		-webkit-border-radius:4px;
+		
+	}
+	
+	
+	
+	/* styling for elements inside overlay */
+	.details {
+		position:absolute;
+		top:15px;
+		right:15px;
+		font-size:11px;
+		color:#fff;
+		width:150px;
+	}
+	
+	.details h3 {
+		color:#aba;
+		font-size:15px;
+		margin:0 0 -10px 0;
+	}
+	</STYLE>
+</HEAD><BODY>
+
+<!-- trigger elements -->
+<DIV id="triggers">
+	<IMG src="./jQuery Tools standalone demo_files/3445879840_7ca4b491e9_m.jpg" rel="#mies1">
+	<IMG src="./jQuery Tools standalone demo_files/3449388113_71a06b8548_m.jpg" rel="#mies2">
+</DIV>
+
+<!-- overlays -->
+<DIV class="simple_overlay" id="mies1"><A class="close"></A>
+	<IMG src="./jQuery Tools standalone demo_files/3445879840_7ca4b491e9.jpg">
+
+	<DIV class="details">
+		<H3>The Barcelona Pavilion</H3>
+
+		<H4>Barcelona, Spain</H4>
+
+		<P>
+			The Barcelona Pavilion, designed by Ludwig Mies van der Rohe, was the German Pavilion for the 1929 International Exposition in Barcelona, Spain. It was an important building in the history of modern architecture.
+		</P>
+
+		<P>
+			Several critics, historians and modernists have declared it "the most beautiful building of the century"
+		</P>
+	</DIV>
+</DIV>
+
+<DIV class="simple_overlay" id="mies2"><A class="close"></A>
+	<IMG src="./jQuery Tools standalone demo_files/3449388113_71a06b8548.jpg">
+	<DIV class="details">
+		<H3>The Barcelona Pavilion</H3>
+
+		<H4>Barcelona, Spain</H4>
+
+		<P>
+			Another unique feature of this building is the <EM>exotic materials Mies chose to use</EM>.
+		</P>
+
+		<P>
+			Plates of high-grade stone materials like veneers of Tinos verde antico marble and golden onyx as well as tinted glass of grey, green, white, in addition to translucent glass, perform exclusively as spatial dividers.
+		</P>
+	</DIV>
+</DIV>
+
+<SCRIPT>
+// What is $(document).ready ? See: http://flowplayer.org/tools/documentation/basics.html#document_ready
+$(document).ready(function() {
+
+$("img[rel]").overlay({
+	effect: 'drop',
+	mask: '#789'
+});
+});
+</SCRIPT>
+
+
+
+ 
+
+<SCRIPT>
+
+// create custom animation algorithm for jQuery called "drop" 
+$.easing.drop = function (x, t, b, c, d) {
+	return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+};
+
+
+// loading animation
+$.tools.overlay.addEffect("drop", function(css, done) { 
+   
+   // use Overlay API to gain access to crucial elements
+   var conf = this.getConf(),
+       overlay = this.getOverlay();           
+   
+   // determine initial position for the overlay
+   if (conf.fixed)  {
+      css.position = 'fixed';
+   } else {
+      css.top += $(window).scrollTop();
+      css.left += $(window).scrollLeft();
+      css.position = 'absolute';
+   } 
+   
+   // position the overlay and show it
+   overlay.css(css).show();
+   
+   // begin animating with our custom easing
+   overlay.animate({ top: '+=55',  opacity: 1,  width: '+=20'}, 400, 'drop', done);
+   
+   /* closing animation */
+   }, function(done) {
+      this.getOverlay().animate({top:'-=55', opacity:0, width:'-=20'}, 300, 'drop', function() {
+         $(this).hide();
+         done.call();      
+      });
+   }
+);
+
+$("img[rel]").overlay({
+	effect: 'drop',
+	mask: '#789'
+});
+</SCRIPT>
+
+
+
+
+
+</BODY></HTML>
