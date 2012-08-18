@@ -3,13 +3,8 @@
 include "../mensajes.php";
 echo("<link rel='stylesheet' href='css/estilos.css'>");
 
+require_once 'conexion.php';
 
-
-
- //// inicio ricaldone
- 
-
- 
  function c_empresas()
  {
 
@@ -18,10 +13,7 @@ echo("<link rel='stylesheet' href='css/estilos.css'>");
         $campo="id_empresa";
         // Conectar con el servidor de base de datos
         //$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa']) or die (msg_errores('CS'));
-        $conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        // Seleccionar base de datos
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
-        //mysql_select_db ('guia') or die (msg_errores('SBD'));
+
         // Enviar consulta
         $comando = "select * from empresas order by nombre";
 
@@ -73,11 +65,7 @@ function c_usuarios()
         $campo="username";
         // Conectar con el servidor de base de datos
         //$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa']) or die (msg_errores('CS'));
-        $conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        // Seleccionar base de datos
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
-        //mysql_select_db ('guia') or die (msg_errores('SBD'));
-        // Enviar consulta
+        
         $comando = "SELECT * FROM  `usuario` WHERE nivel =3";
 
         $consulta = mysql_query ($comando, $conexion)
@@ -119,10 +107,7 @@ function c_usuarios()
         $campo="username";
         // Conectar con el servidor de base de datos
         //$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa']) or die (msg_errores('CS'));
-        $conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        // Seleccionar base de datos
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
-        //mysql_select_db ('guia') or die (msg_errores('SBD'));
+        
         // Enviar consulta
         $comando = "SELECT * FROM  `usuario` WHERE nivel =1";
 
@@ -164,10 +149,7 @@ function c_plazas()
         $tab="catalogoplazas";
         $campo="id_empleo";
         // Conectar con el servidor de base de datos
-        //$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa']) or die (msg_errores('CS'));
-        $conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        // Seleccionar base de datos
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
+        
         //mysql_select_db ('guia') or die (msg_errores('SBD'));
         // Enviar consulta
         $comando = "select * from empresas order by nombre";

@@ -1,10 +1,7 @@
 <?PHP
 session_start();
-$ho = 'localhost';
-$pa = '';
-$us='root';
-$bdd='empleos';
 
+require_once 'conexion.php';
 
 echo("<link rel='stylesheet' href='css/estilo.css'>");
 include("../mensajes.php");
@@ -29,8 +26,7 @@ header("location: index2.php");
 // Si los datos son correctos, procesar formulario
 if (isset($usuario) && $error==false)
 {
-	$conexion = mysql_connect ($ho, $us, $pa) or die (msg_errores('CS'));
-	mysql_select_db($bdd) or die (msg_errores('SBD'));
+
 	$salt = substr($usuario, 0, 1);
     $clave_crypt = crypt($pass, $salt);
 	echo "$clave_crypt";
@@ -39,10 +35,7 @@ if (isset($usuario) && $error==false)
     $consulta = mysql_query ($instruccion, $conexion) or die (msg_errores('FS'));
     $nfilas = mysql_num_rows ($consulta);
 	$resultado = mysql_fetch_array ($consulta);
-//////////////////
-//    $sql = "select name from company";
- //   $q = mysql_query ($sql, $conexion) or die (msg_errores('FS'));
-//	$r = mysql_fetch_array ($q);
+
    mysql_close ($conexion);
 	if ($nfilas == 1)
 	{
