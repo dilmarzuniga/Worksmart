@@ -4,9 +4,5 @@
 	$nombre_plaza= $_GET['nombre'];
 	$salario = $_GET['salario'];
 	$requisitos = $_GET['requisitos'];
-		
 	
-
-
-
 ?>

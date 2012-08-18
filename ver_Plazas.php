@@ -32,8 +32,11 @@
           
     </div> <!--End of header-->
 
-    <div class="menutips"><?php
+    <div class="menutips">
+	<?php
 	session_start(); 
+	require_once 'admin/conexion.php';
+
 	@$id_empresa=$_SESSION['nombre'];
 	if( strlen($id_empresa)==0){
 	echo("<script>alert('Inicie Sesion para acceder al menu de empresas');</script>");
@@ -61,9 +64,6 @@
 				  
 						
 						require_once 'PHPPaging.lib.php';
-						mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-       					 // Seleccionar base de datos
-        				mysql_select_db ('empleos') or die (msg_errores('SBD'));
 						
 						$paging= new PHPPaging;
 						

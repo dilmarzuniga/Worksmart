@@ -2,6 +2,9 @@
 <?php
 session_start();
 include "mensajes.php";
+
+require_once 'admin/conexion.php';
+
 $accion=$_GET['accion'];
 @$id_plaza=$_GET['plaza'];
 echo("<script>alert('hola');</script>");
@@ -56,9 +59,9 @@ else
 	
 	//$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa'])
 	//or die (msg_errores('CS'));
-	$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+	/*$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
     
-    mysql_select_db ("empleos") or die (msg_errores('SBD'));
+    mysql_select_db ("empleos") or die (msg_errores('SBD'));*/
     $comando = "Insert into empleos(descripcion,salario,nomb_empleo,requisitos_empleo) values('$descripcion','$salario','$nombre_plaza',$requisitos)";
     $consulta = mysql_query($comando,$conexion) or die (msg_errores('FI')) ;
     mysql_close($conexion);

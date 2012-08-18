@@ -2,6 +2,7 @@
 <?php
 session_start();
 include "../mensajes.php";
+require_once '../admin/conexion.php';
 
 $error=false;
 $estudios=$_REQUEST['estudios'];
@@ -14,8 +15,8 @@ $profref=$_REQUEST['profesion_referencia'];
 $telref=$_REQUEST['tel_referencia'];
 $mailref=$_REQUEST['mail_referencia'];
 
-	$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-    mysql_select_db ("empleos") or die (msg_errores('SBD'));
+	/*$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+    mysql_select_db ("empleos") or die (msg_errores('SBD'));*/
 	$ver_user="Select * from curriculum order by id_curriculum";
 	$consulta1 = mysql_query($ver_user, $conexion) or die (msg_errores('FS'));
 	$resultado = mysql_fetch_array ($consulta1);

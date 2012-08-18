@@ -1,6 +1,8 @@
 <?php
 session_start();
-//$id_empresa=$_SESSION['nombre'];
+
+require_once 'admin/conexion.php';
+
 @$accion=$_GET['accion'];
 if($accion=='alert'){
 	echo("<script>alert('Plaza Actualizada');</script>");
@@ -66,10 +68,7 @@ if($accion=='alert'){
    	  <p>A continuacion se desplegara una lista con todas las plazas correspondientes a esta empresa, mostrando un link con el cual se obtendran todos los datos de esa plaza de manera que asi se podra realizar cualquier modificacion.</p>
    	  <p><!--<a href="admin/ver_plazas.php" class="Estilo1">Ver las Plazas--><?php 
 	  //include"ver_Plazas.php";
-	  					mysql_connect ('localhost','root','') or die (mysql_error());
-       					 // Seleccionar base de datos
-        				mysql_select_db ('empleos') or die (mysql_error());
-						$conexion=mysql_connect ('localhost','root','');
+	  					
 						require_once 'PHPPaging.lib.php';
 						$paging= new PHPPaging;
 						

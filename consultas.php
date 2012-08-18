@@ -1,17 +1,17 @@
 <?php
 //session_start();
 include "mensajes.php";
+require_once 'admin/conexion.php';
+
 echo("<link rel='stylesheet' href='css/estilos.css'>");
 @accion=$_GET['accion'];
-
-
 
 
  //// inicio ricaldone
  
  if($accion=='verplazas'){
- mysql_connect ('localhost','root','') or die (mysql_error());
- mysql_select_db ('empleos') or die (mysql_error());
+ //mysql_connect ('localhost','root','') or die (mysql_error());
+ //mysql_select_db ('empleos') or die (mysql_error());
  mysql_query="select * from solicitudes where id_user=$user";
  
  }
@@ -24,9 +24,9 @@ echo("<link rel='stylesheet' href='css/estilos.css'>");
         $campo="id_empresa";
         // Conectar con el servidor de base de datos
         //$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa']) or die (msg_errores('CS'));
-        $conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+        //$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
         // Seleccionar base de datos
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
+        //mysql_select_db ('empleos') or die (msg_errores('SBD'));
         //mysql_select_db ('guia') or die (msg_errores('SBD'));
         // Enviar consulta
         $comando = "select * from empresas order by nombre";
@@ -77,9 +77,9 @@ function ver_categorias()
         $campo="id_empleo";
 		
 		 //$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa']) or die (msg_errores('CS'));
-        $conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+        //$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
         // Seleccionar base de datos
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
+        //mysql_select_db ('empleos') or die (msg_errores('SBD'));
         //mysql_select_db ('guia') or die (msg_errores('SBD'));
         // Enviar consulta
         $comando = "select categoria from plazas";

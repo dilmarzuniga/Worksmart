@@ -1,8 +1,10 @@
 <?php 
 @$accion=$_GET['accion'];
 @$id=$_GET["id"];
-mysql_connect ('localhost','root','') or die (mysql_error());
-mysql_select_db ('empleos') or die (mysql_error());
+require_once 'admin/conexion.php';
+
+/*mysql_connect ('localhost','root','') or die (mysql_error());
+mysql_select_db ('empleos') or die (mysql_error());*/
 if($accion=='save'){
 				$nombre = $_POST['names'];
 				$apellidos = $_REQUEST['last'];

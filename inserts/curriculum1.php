@@ -2,6 +2,7 @@
 <?php
 session_start();
 include "../mensajes.php";
+require_once '../admin/conexion.php';
 
 $error=false;
 $nombre=$_REQUEST['nombre'];
@@ -21,8 +22,6 @@ $mensaje=$_REQUEST['mensaje'];
 $sexo=$_REQUEST['sexo'];
 
 
-	$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-    mysql_select_db ("empleos") or die (msg_errores('SBD'));
 	$ver_user="Select * from curriculum order by id_curriculum";
 	$consulta1 = mysql_query($ver_user, $conexion) or die (msg_errores('FS'));
 	$resultado = mysql_fetch_array ($consulta1);

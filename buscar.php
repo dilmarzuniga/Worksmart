@@ -3,20 +3,11 @@
 						session_start();
 						
 						require_once 'PHPPaging.lib.php';
-						mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+						require_once 'admin/conexion.php';
+						
+						/*mysql_connect ('localhost','root','') or die (msg_errores('CS'));
        					 // Seleccionar base de datos
         				mysql_select_db ('empleos') or die (msg_errores('SBD'));
-						
-						/*$criterio = "";
-						$combo_depto="";
-						$combo_tipo="";
-						$combo_categoria="";
-						*/
-       
-						//$txt_criterio = $_GET["txt_busqueda"];
-						/*$combo_depto = $_REQUEST["combo_depto"];
-						$combo_categoria = $_REQUEST["combo_categoria"];
-						$combo_tipo = $_REQUEST["combo_tipo"];
 						*/
 						
 						$txtbusqueda= $_REQUEST['txtbusqueda'];

@@ -2,6 +2,7 @@
 <?php
 session_start();
 include "../mensajes.php";
+require_once '../admin/conexion.php';
 
 $error=false;
 $nombre=$_REQUEST['name'];
@@ -66,11 +67,6 @@ else
     $salt = substr ($username, 0, 1);
 	$pwd_crypt = crypt ($pwd, $salt);
 	
-	
-	//$conexion = mysql_connect ($_SESSION['ho'], $_SESSION['us'], $_SESSION['pa'])
-	//or die (msg_errores('CS'));
-	$conexion=mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-    mysql_select_db ("empleos") or die (msg_errores('SBD'));
     $comando="Insert into usuario(userName,nombre,password,nivel) values('$username','$nombre','$pwd_crypt',$nivel)";
     $consulta = mysql_query($comando,$conexion) or die (mysql_error()) ;
 	$comando2="Insert into curriculum (username) VALUES ('$username')";

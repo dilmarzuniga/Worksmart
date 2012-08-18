@@ -81,10 +81,12 @@
 	  	//session_start();
 						
 						require_once 'PHPPaging.lib.php';
+						require_once 'admin/conexion.php';
+						/*
 						mysql_connect ('localhost','root','') or die (msg_errores('CS'));
        					 // Seleccionar base de datos
         				mysql_select_db ('empleos') or die (msg_errores('SBD'));
-						
+						*/
 						$paging= new PHPPaging;
 						
 						$paging-> verPost(true);

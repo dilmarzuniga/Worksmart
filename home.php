@@ -3,6 +3,7 @@ session_start();
 $user=$_SESSION['nombre'];
 $id_user=$_SESSION['id_user'];
 
+require_once 'admin/conexion.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -32,16 +33,18 @@ $id_user=$_SESSION['id_user'];
 	<?php @$accion=$_REQUEST['accion'];
 	if($accion=='verplazas')
 	{
-			mysql_connect ('localhost','root','') or die (mysql_error());
+			/*mysql_connect ('localhost','root','') or die (mysql_error());
 			mysql_select_db ('empleos') or die (mysql_error());
 			
 			$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-				mysql_select_db ('empleos') or die (msg_errores('SBD'));
+				mysql_select_db ('empleos') or die (msg_errores('SBD'));*/
+				
 		$queEmp = "SELECT p.nomb_empleo as nombre
 				   FROM solicitudes as s
 				   inner join plazas as p
 				   on p.id_empleo = s.id_empleo
 				   WHERE id_user = '$id_user'";	
+				   
 		$resEmp = mysql_query($queEmp, $conexion) or die(mysql_error());
 		$totEmp = mysql_num_rows($resEmp);	 
 		

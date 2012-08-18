@@ -43,13 +43,15 @@
 	  <script type='text/javascript' src='menu_empresas.js'></script>
 	</div>
 	<?php
+	//Incluyendo conexion
+	require_once 'admin/conexion.php';
+	
 	$id_plaza=$_GET['plaza'];
 	$empresa=$_GET['empresa'];
-	$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
-$queEmp = "SELECT * FROM plazas WHERE id_empleo = '$id_plaza'";	
-$resEmp = mysql_query($queEmp, $conexion) or die(mysql_error());
-$totEmp = mysql_num_rows($resEmp);	   
+		
+	$queEmp = "SELECT * FROM plazas WHERE id_empleo = '$id_plaza'";	
+	$resEmp = mysql_query($queEmp, $conexion) or die(mysql_error());
+	$totEmp = mysql_num_rows($resEmp);	   
 	if ($totEmp> 0) {
  		while ($rowEmp = mysql_fetch_assoc($resEmp)) {	
 		//$rowEmp = mysql_fetch_assoc($resEmp);

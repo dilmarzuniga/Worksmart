@@ -59,9 +59,7 @@
    	  <?php 
 			 				
 						require_once 'PHPPaging.lib.php';
-						mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-       					 // Seleccionar base de datos
-        				mysql_select_db ('empleos') or die (msg_errores('SBD'));
+						require_once 'admin/conexion.php';
 						
 						$paging= new PHPPaging;
 						
@@ -69,14 +67,21 @@
 						
 						$num_id_plaza = "select count id_empleo from plazas where id_empresa='$id_empresa'";
 						//$nombre_empleo = "select nomb_empleo from plazas where id_empleo = '$id_plaza'";
-						$consulta2 = "select * from solicitudes";
-							
-							$paging->agregarConsulta($consulta2);
-							
-						
-						//$paging->mantenerVar('txtbusqueda');
-						
-						
+						//Hacemos la consulta a la tabla de solicitudes
+						$consulta2 = "select concat(c.nombres,' ',c.apellidos) as Nombre,
+									u.id_user as id,
+									c.profesion,
+									p.nomb_empleo as plaza
+									from solicitudes as s
+									inner join plazas as p 
+									on p.id_empleo = s.id_empleo
+									inner join usuario as u
+									on u.id_user = s.id_user
+									inner join curriculum as c
+									on u.username = c.username
+									where p.id_empresa = '" . $id_empresa . "'";
+									
+						$paging->agregarConsulta($consulta2);
 						
 						$paging->ejecutar();
 						
@@ -86,11 +91,11 @@
 							
 							echo '<table>';
 							echo '<tr>';
-								echo '<td><b> Nombre de plaza: </b> </td><td>'.$p['id_empleo']. '</td>';
+								echo '<td><b> Nombre de plaza: </b> </td><td>'.$p['plaza']. '</td>';
 								echo '</td>';
 							echo '</tr>';
 							echo '<tr>';
-								echo '<td><b> Usuario que lo requiere: </b> </td><td>'.$p['id_user']. '</td>';
+								echo "<td><b> Usuario que lo requiere: </b> </td><td><a href='detalle_curri.php?id=$p[id]'>".$p['Nombre']. ", ". $p['profesion']."</a></td>";
 								
 							echo '</tr>';
 							echo '</table>';

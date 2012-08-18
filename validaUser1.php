@@ -11,6 +11,7 @@ $bdd='empleos';
 //$bdd='a1813721_scei';
 
 //$en = $_REQUEST['EN'];
+require_once 'admin/conexion.php';
 
 echo("<link rel='stylesheet' href='css/estilo.css'>");
 include("mensajes.php");
@@ -34,8 +35,8 @@ if (trim($pass) == "")
 // Si los datos son correctos, procesar formulario
 if (isset($usuario) && $error==false)
 {
-	$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-	mysql_select_db ($bdd) or die (msg_errores('SBD'));
+	/*$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+	mysql_select_db ($bdd) or die (msg_errores('SBD'));*/
 	$salt = substr ($usuario, 0, 1);
     $clave_crypt = crypt ($pass, $salt);
     $instruccion = "select userName, nombres, apellidos, password, nivel from usuarios where userName = '$usuario'" . " and password = '$clave_crypt'";

@@ -4,6 +4,9 @@ $user=$_SESSION['nombre'];
 @$id=$_GET['id'];
 @$accion=$_GET['accion'];
 $id_user=$_SESSION['id_user'];
+
+include_once 'admin/conexion.php';
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -33,8 +36,8 @@ $id_user=$_SESSION['id_user'];
 	if($accion=='alert'){
 	echo("<script>alert('Datos Actualizados');</script>");
 	}
-	$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));
+	/*$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
+        mysql_select_db ('empleos') or die (msg_errores('SBD'));*/
 $queEmp = "SELECT * FROM curriculum WHERE username = '$user'";	
 $resEmp = mysql_query($queEmp, $conexion) or die(mysql_error());
 $totEmp = mysql_num_rows($resEmp);	   
