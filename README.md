@@ -1,4 +1,0 @@
-Worksmart
-=========
-
-Proyecto Desarrollo Sostenible
