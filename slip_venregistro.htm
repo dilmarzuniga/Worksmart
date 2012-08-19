@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://flowplayer.org/tools/demos/tabs/accordion-horizontal.htm -->
+<HTML><!--
+	This is a jQuery Tools standalone demo. Feel free to copy/paste.
+	                                                         
+	http://flowplayer.org/tools/demos/
+	
+	Do *not* reference CSS files and images from flowplayer.org when in production  
+
+	Enjoy!
+--><HEAD><META http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<TITLE>jQuery Tools standalone demo</TITLE>
+
+	<!-- include the Tools -->
+	<SCRIPT src="./slip_venregistro_files/jquery.tools.min.js"></SCRIPT>
+	 
+
+	<!-- standalone page styling (can be removed) -->
+	<LINK rel="stylesheet" type="text/css" href="./slip_venregistro_files/standalone.css">	
+
+
+	<!-- accordion styling -->	
+	<LINK rel="stylesheet" type="text/css" href="./slip_venregistro_files/tabs-accordion-horizontal.css"> 
+</HEAD><BODY> 	
+
+<!-- accordion root -->
+<DIV id="accordion">
+
+	<!-- accordion header #1 -->
+	<IMG src="./slip_venregistro_files/streaminge.png" class="current">
+	
+	<DIV style="width: 200px; display: block; ">
+		<H3>First pane</H3>
+		<P>
+			Consectetur adipiscing elit. Praesent bibendum eros ac nulla. Integer vel lacus ac neque viverra.
+		</P>
+	</DIV>
+	
+	<IMG src="./slip_venregistro_files/flash.png">
+	
+	<DIV>
+		<H3>Second pane</H3>
+		<P>
+			Cras diam. Donec dolor lacus, vestibulum at, varius in, mollis id, dolor. Aliquam erat volutpat. 
+		</P>
+	</DIV>
+
+	<IMG src="./slip_venregistro_files/streaming.png">
+	
+	<DIV>
+		<H3>Third pane</H3>
+		<P>
+			Non lectus lacinia egestas. Nulla hendrerit, felis quis elementum viverra, purus felis egestas magna.
+		</P>
+	</DIV>	
+
+</DIV>
+
+<!-- activate tabs with JavaScript -->
+<SCRIPT>
+$(function() {
+
+$("#accordion").tabs("#accordion div", {
+	tabs: 'img', 
+	effect: 'horizontal'
+});
+});
+</SCRIPT>
+
+
+
+
+</BODY></HTML>

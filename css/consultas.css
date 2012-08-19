@@ -1,0 +1,40 @@
+body
+{
+background:url(../images/bg.jpg) repeat-x top #fff;
+font-family:calibri, Helvetica, sans-serif;
+padding:0;
+font-size:14px;
+margin:0px auto auto auto;
+color:#99FF33;
+}
+body.details{
+background:url(../images/bg2.jpg) repeat-x top #fff;
+}
+td
+	{
+	border:0;
+	}
+th{
+border:0;
+}
+table
+{
+border:0;
+}
+h1
+{
+color:#CCCCCC;
+}
+a
+{
+font-size:16px;
+}
+a:link,a:visited
+{
+color:#00CCCC;
+}
+v:link
+{
+color:#00CCCC;
+}
+
