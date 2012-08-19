@@ -635,3 +635,8 @@ p.primero_tips:first-letter
 	list-style-position:inside;
 	font-family:"Century gohic";
 }
+
+.espacio 
+{
+	margin-top: 50px;
+}
