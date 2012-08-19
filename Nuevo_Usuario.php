@@ -42,7 +42,7 @@
     <div class="main_content">
 
     	<div align=center>
-            	<h1>Proceso de Registracion</h1>
+            	<h1>Proceso de Registro</h1>
 		
 				</div>
 				
@@ -153,9 +153,9 @@
 
 <!-- javascript coding -->
 		<div class="right_content">
-			         	<h3>Es  facil, solo tienes que seguir los siguientes pasos y llenar el formulario que se presenta a continuacion. <br> <br> Recuerde que usted ha aceptado los terminos y condiciones anteriores le deseamos mucha suerte con el proceso, cuando haya terminado de ingresar sus datos reviselos detalladamente y guarde su contraseña en un lugar seguro.</h3>
+			         	<h3>Es  f&aacute;cil, solo tiene que seguir los siguientes pasos y llenar el formulario que se presenta a continuaci&oacute;n. <br> <br> Recuerde que usted ha aceptado los terminos y condiciones anteriores. Le deseamos mucha suerte con el proceso, cuando haya terminado de ingresar sus datos rev&iacute;selos detalladamente y guarde su contraseña en un lugar seguro.</h3>
 						<hr>
-					<h3><i>	Si posees alguna duda o consulta no olvides en escribirnos, o contactarte con nosotros estaremos con gusto ayudandote en lo que mas necesites.</h3></i>
+					<h3><i>	Si posee alguna duda o consulta no dude en escribirnos, o contactarse con nosotros. Estaremos con gusto ayudandole en lo que necesite.</h3></i>
 					<center>
 					<img src="./images/contact.png" width="98 px" height="98 px"><br>
 				<a href="Contactanos.php"><button><b>Contactanos</b></a> 

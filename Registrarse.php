@@ -119,7 +119,7 @@ Si quieres cancelar el registro, haz clic <a href="Index.php">aquí</a> para volv
     		<div class="right_content">
 
               <h1>¿O Prefieres Iniciar Sesi&oacute;n? </h1>
-             	<p><h4>Si prefieres puede iniciar con tu nombre de usuario y tu cuenta ID: que posees para observar tu actividad de la informacion que te han enviado las empresas.</span></p></h4>
+             	<p><h4>Puedes iniciar con tu nombre de usuario y contraseña, para observar tu actividad y la informacion que te han enviado las empresas.</span></p></h4>
  <center>
 	<IMG src="./images/people.png"  border=0 >
 
@@ -171,7 +171,7 @@ Si quieres cancelar el registro, haz clic <a href="Index.php">aquí</a> para volv
 	<DIV style="width: 200px; display: block; ">
 		<H3>Confianza</H3>
 		<P>
-			Antes que nada queremos de que estes totalmente seguro que tus datos estan en buenas manos.
+			Antes que nada queremos que est&eacute;s totalmente seguro que tus datos est&aacute;n en buenas manos.
 		</P>
 	</DIV>
 	
@@ -180,25 +180,25 @@ Si quieres cancelar el registro, haz clic <a href="Index.php">aquí</a> para volv
 	<DIV>
 		<H3>Seguridad</H3>
 		<P>
-			Estos datos no se dibulgaran a Nadie en particular. Queremos que tus datos esten lo mas seguro posible.
+			Estos datos no se divulgar&aacute;n. Queremos que tus datos esten lo m&aacute;s seguro posible.
 		</P>
 	</DIV>
 
 	<IMG src="./slip_venregistro_files/streaming.png">
 	
 	<DIV>
-		<H3>Estamos para Servirte</H3>
+		<H3>Estamos para servirte</H3>
 		<P>
-			El empleo es lo que mas nos interesa darte, por tales razones siempre estamos a tu lado apoyandote.
+			El empleo es lo que m&aacute;s nos interesa darte, por tales razones siempre estamos a tu lado apoyandote.
 		</P>
 	</DIV>	
 
 	<IMG src="./slip_venregistro_files/gnome_fs_fifo.png" class="current" align="center">
 	
 	<DIV >
-		<H3>Rapidez</H3>
+		<H3>R&aacute;pidez</H3>
 		<P>
-			Accion rapida de empleos al instante, y ademas confiamos en que encuentres ese empleo que andas buscando.
+			Acci&oacute;n r&aacute;pida de empleos, y además confiamos en que encuentres ese empleo que est&aacute;s buscando.
 		</P>
 	</DIV>
 
@@ -214,7 +214,7 @@ $("#accordion").tabs("#accordion div", {
 });
 </SCRIPT>
 <p><br>
-    <h4>Copyright SmartWork Todos los derechos reservados</h4>
+    <h4>Copyright WorkSmart Todos los derechos reservados</h4>
 
 	
 		

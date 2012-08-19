@@ -75,7 +75,7 @@ $("#tab").show();
         <div class="box1" id="tab">
           <div class="center_text">
             <div class="big_title"> <span>Queremos </span> ayudarte<span>!</span></div>
-            <p> Ahora mismo miles de empresas en todo El Salvador están en busca de personal capacitado para laborar en ellas. Si estás   		                        sin trabajo o quieres cambiar, toma la prueba en Worksmart tenemos tu solución! </p>
+            <p> Ahora mismo miles de empresas en todo El Salvador están en busca de personal capacitado para laborar en ellas. Si estás   		                        sin trabajo o quieres aspirar a uno mejor, toma la prueba en WorkSmart tenemos tu solución! </p>
           </div>
           <div class="right_img"><img src="images/trabajando.jpg" alt="image" width="379" height="272" title=""/></div>
         </div>
@@ -95,7 +95,7 @@ $("#tab").show();
         </div>
         <div class="box1" id="tab3">
           <div class="center_text">
-            <div class="big_title">Encuentra <span>trabajo</span> rapidamente <span>!</span>
+            <div class="big_title">Encuentra <span>trabajo</span> r&aacute;pidamente <span>!</span>
 			</div>
             <p> ¿Cansado de pasar todo el día con el directorio en la mano buscando trabajo? Pues bien aquí en Worksmart te proporcionamos una manera gratuita y f&aacute;cil de encontrar trabajo y lo mejor de todo es que desde tu hogar. Suscríbete ya! </p>
           </div>
@@ -116,17 +116,17 @@ $("#tab").show();
 
     		<div class="left_content">
             	<h1>&iquest;Qui&eacute;nes somos? </h1>
-                <p>Enterprise Solutions&#174; es una empresa dedicada a ayudar a la juventud salvadore&ntilde;a a buscar su superaci&oacute;n profesional, as&iacute; mismo creando una alianza arm&oacute;nica entre empresarios y trabajadores.</p>
-                <p>Nuestra misi&oacute;n: La ayuda empresarial a todo el territorio a trav&eacute;s de los beneficios tecnol&oacute;gicos de nuestros tiempos. </p>
+                <p>Enterprise Solutions&#174; es una empresa dedicada a ayudar a la juventud salvadore&ntilde;a a buscar su superaci&oacute;n profesional, creando una alianza arm&oacute;nica entre empresarios y trabajadores.</p>
+                
                 <h1>Misi&oacute;n </h1>
-                <p>Ser una comunidad con la capacidad de ayudar a muchas personas que transcurren a buscar empleo rapidamente, con la presici&oacute;n y exactitud a la hora de transmitir sus datos</p>
+                <p>Brindar información fidedigna y actualizada a nuestros usuarios, estrechando el vínculo entre el trabajador y la empresa. Todo ello con el propósito de garantizar la colocación del mejor personal joven en todo el territorio salvadoreño.</p>
 		<h1>Visi&oacute;n </h1>
-                <p>Ayudar a muchas personas a salir adelante y proporcionarles un empleo de manera r&aacute;pida y asi levantar a nuestro pa&iacute;s en alto.</p>
+                <p>Difundir un sistema novedoso a través de internet para la búsqueda de empleos, que ofreza herramientas útiles y sencillas para que el futuro empleado sea más apto paralas entrevistas y, de este modo, beneficiar tanto a la empresa como a los que aplican a las plazas.</p>
                 <div class="newsletter"></div>       
 			
                 <!--aqui empieza el truco del video-->
 				<h1 align="center">¡¡Mira nuestras empresas asociadas!!</h1>
-				<p>Puedes observar a traves de ese clip nuestras empresas que nos colaboran en el proceso de admisi&oacute;n y gracias a ellas muchos usuarios estan siendo contratados rapida y facilmente a nivel regional.<p>
+				<p>Puedes observar a trav&eacute;s de este clip las empresas que colaboran en el proceso de admisi&oacute;n a trav&eacute;s de nuestra p&aacute;gina y gracias a ellas muchos usuarios estan siendo contratados r&aacute;pida y f&aacute;cilmente a nivel nacional.<p>
 				
 		
 <script src="flowplayer/example/flowplayer-3.2.2.min.js"></script>
@@ -241,12 +241,12 @@ echo("<font color='red'>Escriba su usuario y contraseña</font>");
         	<h2>&iquest;Tu primera entrevista? Aqu&iacute; te decimos qu&eacute; hacer </h2>
             <div class="favorites_box">
                 <span class="fav_nr">1</span>
-                <p class="favorites">Forma correcta de crear tu curriculum Vitae, qu&eacute; hacer y qu&eacute; se debe evitar...<a href="Tips_CVredaccion.php"> ver m&aacute;s</a> </p>           
+                <p class="favorites">Forma correcta de crear tu Curr&iacute;culum Vitae, qu&eacute; hacer y qu&eacute; se debe evitar...<a href="Tips_CVredaccion.php"> ver m&aacute;s</a> </p>           
             </div> 
             
             <div class="favorites_box">
                 <span class="fav_nr">2</span>
-                <p class="favorites">Preparando tu entrevista de trabajo. Ac&aacute; de presentamos una gu&iacute;a completa desde qu&eacute; debes decir hasta... <a href="tips_EntrevistaPres.html">ver m&aacute;s </a></p>           
+                <p class="favorites">Preparando tu entrevista de trabajo. Ac&aacute; de presentamos una gu&iacute;a completa desde qu&eacute; debes decir... <a href="tips_EntrevistaPres.html">ver m&aacute;s </a></p>           
             </div>        
             
             <div class="favorites_box">
