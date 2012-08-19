@@ -60,7 +60,7 @@ if (isset($usuario) && $error==false)
 		
 	}
 	else{
-	header("location: index.php?mostrar=error");
+	header("location: Index.php?mostrar=error");
 	}
 }
 }
