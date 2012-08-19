@@ -61,36 +61,21 @@
 			
     		<h1 class="Estilo1">El equipo de WorkSmar</h1> 
 			
- <span class="orange"><strong>WorkSmart org. es un proyecto Experimental, no esta a la venta.</strong></span></p>
- <h2>Proyecto Expo 2010</h2>
- <img src="images/expo10.jpg" align="center" width="400" height="118">
+ 
+<p>
  Integrantes:
  <ul type ="circle">
- <li>Rodrigo Jos&eacute; Rodriguez Perez
-  <li>David Ernesto Alem&aacute;n Posada
-   <li>Alejandra Ivett Melendez Morales
-    <li>Raquel Sibrian Joya
-	<li>Nestor Ariel Lam Navarro
+ <li>Bayona Tenorio, Edwin Alexander
+  <li>Melendez Morales, Alejandra Iveth
+   <li>Mendez Parras, William Davida
+    <li>Rivera Romero, Jorge Luis
  
  </ul>
-              Especializaci&oacute;n:
-	 <ul type ="circle">
- <li>Tecnicos Informaticos.
 
- 
- </ul>		
-
- </ul>
-             Evaluado por:
-	 <ul type ="circle">
- <li>Raul Armando Bermudez Quinteros (raulabq@hotmail.com)
- 
-
- 
- </ul> 
-      
-       <hr>     
-          <h4 align="center">  WorkSmart todos los derechos reservados</h4>
+      <div class="espacio">    
+     			<hr>     
+		      	<h4 align="center">  WorkSmart todos los derechos reservados</h4>
+	</div>
       </div> <!--End of right_content-->          
             
 
