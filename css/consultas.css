@@ -1,25 +1,33 @@
 body
 {
-background:url(../images/bg.jpg) repeat-x top #fff;
-font-family:calibri, Helvetica, sans-serif;
-padding:0;
-font-size:14px;
-margin:0px auto auto auto;
-color:#99FF33;
+	background:url(../images/bg.jpg) repeat-x top #fff;
+	font-family:calibri, Helvetica, sans-serif;
+	padding:0;
+	font-size:14px;
+	margin:0px auto auto auto;
+	color:#99FF33;
 }
+
 body.details{
-background:url(../images/bg2.jpg) repeat-x top #fff;
-}
+	background:url(../images/bg2.jpg) repeat-x top #fff;
+}	
 td
 	{
-	border:0;
+	border:solid 1px teal;
+	background-color:#d3d3d3;
+	text-align:center;
 	}
 th{
-border:0;
+	border:none;
 }
 table
 {
-border:0;
+	border:solid 1px #d3d3d3;
+	color:#000000;
+	background-color:#ffffff;
+	margin:20px;
+	text-align:center;
+	box-shadow:5px 5px 10px 5px #000000;
 }
 h1
 {
@@ -37,4 +45,3 @@ v:link
 {
 color:#00CCCC;
 }
-

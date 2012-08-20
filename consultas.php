@@ -4,15 +4,15 @@ include "mensajes.php";
 require_once 'admin/conexion.php';
 
 echo("<link rel='stylesheet' href='css/estilos.css'>");
-@accion=$_GET['accion'];
+@$accion=$_GET['accion'];
 
 
- //// inicio ricaldone
+ 
  
  if($accion=='verplazas'){
  //mysql_connect ('localhost','root','') or die (mysql_error());
  //mysql_select_db ('empleos') or die (mysql_error());
- mysql_query="select * from solicitudes where id_user=$user";
+ $mysql_query="select * from solicitudes where id_user=$user";
  
  }
  
@@ -31,13 +31,12 @@ echo("<link rel='stylesheet' href='css/estilos.css'>");
         // Enviar consulta
         $comando = "select * from empresas order by nombre";
 
-        $consulta = mysql_query ($comando, $conexion)
-                    or die (msg_errores('FS'));
+        @$consulta = mysql_query($comando) or die (msg_errores('FS'));
         // Mostrar resultados de la consulta
         $nfilas = mysql_num_rows ($consulta);
         if ($nfilas > 0)
         {
-            echo ("<CENTER> <TABLE width=60% border = 1>");
+            echo ("<CENTER> <TABLE id=\"empT\">");
             echo ("<TR>");
             echo ("<TH width=186>Nombre</TH>");
             echo ("<TH width=161>Telefono</TH>");
