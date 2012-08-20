@@ -41,7 +41,7 @@ function validacion()
         <div id="menu"> 
 		    <ul>                                                                       
             <li ><a href="Index.php">Inicio</a></li> 
-            <li><a href="Registrarse.php">R&eacute;gistrate</a></li> 
+            <li><a href="Registrarse.php">Reg&iacute;strate</a></li> 
             <li class="selected"><a href="Empresas.php">Empresas</a></li> 
             <li><a href="Contactanos.php">Cont&aacute;ctanos</a></li> 
             <li><a href="Acerca de.php">Acerca de </a></li> 
@@ -111,9 +111,9 @@ function validacion()
 	 
 
 	<!-- standalone page styling (can be removed) -->
-<h2 align=center>Mira Algunas de las empresas que estan asosiadas con Work Smart</h2>
+<h2 align=center>Mira Algunas de las empresas que estan asoscadas con Work Smart</h2>
 <h3 align=center>¿Por que Inscribir mi Empresa?</h3>
-<h4 align=center>Algunas de estas empresas nos han dado su total confianza y han decidido Inscribirse. Solo falta tu empresa Solicita Ya tu Inscripcion...<h4>
+<h4 align=center>Algunas de estas empresas nos han dado su total confianza y han decidido Inscribirse. Solo falta tu empresa Solicita Ya tu Inscripci&oacute;n...<h4>
 
 
 
@@ -296,12 +296,12 @@ $("img[rel]").overlay({
                   </div>
 				  <!--cuenta-->
 	
-    <h2 align=center>Si no posees la cuenta inscribete es sencillo</h2>
+    <h2 align=center>Si no posees la cuenta inscr&iacute;bete es sencillo</h2>
 	
 	<h4 align=center>Esperamos que disfrute de las muchas ventajas que a usted le ofrecemos en WorkSmart, queremos que su empresa continue en crecimiento, por ello que desde aqui puede disfrutar y contratar nuevos empleados.</H4>
 	
 
-	<h1 align=center>Solo faltas tu!!!</h1>
+	<h1 align=center>Solo faltas t&uacute;!!!</h1>
 
 
 
