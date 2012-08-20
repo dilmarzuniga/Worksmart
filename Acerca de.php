@@ -67,7 +67,7 @@
  <ul type ="circle">
  <li>Bayona Tenorio, Edwin Alexander
   <li>Melendez Morales, Alejandra Iveth
-   <li>Mendez Parras, William Davida
+   <li>Parras M&eacute;ndez, William David
     <li>Rivera Romero, Jorge Luis
  
  </ul>
