@@ -4,6 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
 <title>WORK SMART</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" type="text/css" href="menu/menu.css">
 <!--[if IE 6]>
 	<script type="text/javascript" src="unitpngfix.js"></script>
 <![endif]--> 
@@ -34,7 +35,10 @@
     <div class="main_content">
 	  <div class="menutips">
             	<h1>&nbsp;</h1>
-				<script type='text/javascript' src='menu.js'></script>
+				<?php
+					include("menu/menu.php");
+					mostrarMenu();
+				?>
 				
    	  </div> 
     		<!--End of left_content-->
