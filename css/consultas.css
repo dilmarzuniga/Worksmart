@@ -13,19 +13,20 @@ body.details{
 }	
 td
 	{
-	border:solid 1px teal;
-	background-color:#ffffff;
-	text-align:center;
+	border:none;
+	padding:15px 0px 0px 15px;
 	}
 th{
 	border:none;
 }
 table
 {
+	padding:10px;
 	border:solid 1px #d3d3d3;
 	color:#000000;
 	background-color:#ffffff;
 	margin:20px;
+	font-family:"times";
 	text-align:center;
 	box-shadow:5px 5px 10px 5px #000000;
 }
