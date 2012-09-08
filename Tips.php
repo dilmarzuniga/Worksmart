@@ -4,6 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
 <title>Business Company</title>
 <link rel="stylesheet" type="text/css" href="style.css" />
+
+
 <!--[if IE 6]>
 	<script type="text/javascript" src="unitpngfix.js"></script>
 <![endif]-->
@@ -78,7 +80,9 @@ l[18]= "Musica";
 l[19]= "Medicina";
 l[20]= "Odonto";
 l[21]= "Enfermeria";
- 
+
+
+
 for(var preguntas=0;preguntas<40;preguntas++)   
  
 	{
@@ -203,7 +207,12 @@ for (var i=1;i<=20;i++)
 	}
 }
 
-document.write("<body background='images/bg2.jpg'>");
+
+document.write("<head>");
+document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"css/estiloTest.css\" />");
+document.write("</head>");
+
+document.write("<body>");
 document.write("<h1><center><font color='#00A3CA'>Resultados Obtenidos en nuestra Prueba</font></h1></center>");
 document.writeln("<p align=justify><font size=2 face=Arial color=#003366><i><b>Estas son lres carreras que mas ");
 document.writeln("se adecuan a tu perfil personal.<br><br></b></i></font>");
@@ -308,8 +317,9 @@ document.writeln("</body>");
  
  
 }
-         </script> 
- 
+</script> 
+
+<!-- fin funcion count--> 
 
 
 </head>
