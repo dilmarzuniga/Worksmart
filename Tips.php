@@ -451,7 +451,7 @@ document.writeln("</body>");
               <td width="21" height="16" ALIGN=CENTER bordercolor="#3399FF" bgcolor="#3399FF"><p><strong><font color="#FFFFCC" face="Arial, Helvetica, sans-serif" size="1">Bastante</font></strong></p></td> 
               <td width="21" height="16" ALIGN=CENTER bordercolor="#3399FF" bgcolor="#3399FF"><p><strong><font color="#FFFFCC" face="Arial, Helvetica, sans-serif" size="1">Mucho</font></strong></p></td> 
             </tr> 
-            <tr bordercolor="#CC0000" bgcolor="#FFFF00"> 
+            <tr"> 
               <form> 
                 <td width="282" height="16" ALIGN="left"  NOWRAP bordercolor="#3399FF" bgcolor="#FFFF99"><p align="left" class="style14">Visitar una fabrica automatizada para producir textiles</p></td> 
                 <td width="21" height="16" ALIGN=CENTER bordercolor="#3399FF" bgcolor="#FFFF99" ><p> 
@@ -468,7 +468,7 @@ document.writeln("</body>");
                 </p></td> 
               </form> 
             </tr> 
-            <tr bordercolor="#CC0000" bgcolor="#FFFF00"> 
+            <tr> 
               <form> 
                 <td width="282" height="16" ALIGN="left"  NOWRAP bordercolor="#3399FF" BGCOLOR="#FFFFCC"><p align="left" class="style14">Visitar un hospital y participar de voluntario</p></td> 
                 <td width="21" height="16" ALIGN=CENTER bordercolor="#3399FF" bgcolor="#FFFFCC" ><p> 
@@ -485,7 +485,7 @@ document.writeln("</body>");
                 </p></td> 
               </form> 
             </tr> 
-            <tr bordercolor="#CC0000" bgcolor="#FFFF00"> 
+            <tr> 
               <form> 
                 <td width="282" height="16" ALIGN="left"  NOWRAP bordercolor="#3399FF" bgcolor="#FFFF99"><p align="left" class="style14">Visitar los campos de cultivo de una gran explotaci&oacute;n de vi&ntilde;edos</p></td> 
                 <td width="21" height="16" ALIGN=CENTER bordercolor="#3399FF" bgcolor="#FFFF99" ><p> 
@@ -502,7 +502,7 @@ document.writeln("</body>");
                 </p></td> 
               </form> 
             </tr> 
-            <tr bordercolor="#CC0000" bgcolor="#FFFF00"> 
+            <tr"> 
               <form> 
                 <td width="282" height="16" ALIGN="left"  NOWRAP bordercolor="#3399FF" BGCOLOR="#FFFFCC"><p align="left" class="style14">Conocer la actividad
                   econ&oacute;mica, negocios de un pa&iacute;s</p></td> 
