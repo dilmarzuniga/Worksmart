@@ -1,35 +1,25 @@
 <?php
-session_start();
-$user=$_SESSION['nombre'];
-$id_user=$_SESSION['id_user'];
-
-require_once 'admin/conexion.php';
+	session_start();
+	$user=$_SESSION['nombre'];
+	$id_user=$_SESSION['id_user'];
+	require_once 'admin/conexion.php';
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Home</title>
-</head>
-<link rel="stylesheet" href="css/consultas.css" />
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Home</title>
+		<link rel="stylesheet" href="css/home.css" />
+	</head>
 <body>
-<table width="1088" height="1014" border="1">
-  <tr>
-    <td width="218" height="159">&nbsp;</td>
-    <td width="815">&nbsp;</td>
-    <td width="33">&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="34">Bienvenido <?php
+	<div id="main">
+	<p> Bienvenido/a <?php
 	if( strlen($user)==0){
 	echo("<script>alert('Inicie Sesion para acceder al menu de usuario');</script>");
-	header("location:Index.php?mostrar=2");
+		header("location:Index.php?mostrar=2");
 	}	
-		echo("<font size=5>$user</font>");
-		?> <a href="login.php">Cerrar Sesion</a> </td>
-    
-	<td rowspan="2">
+		echo("<span id=\"name\">$user</span></p>");
+		?> 
 	<?php @$accion=$_REQUEST['accion'];
 	if($accion=='verplazas')
 	{
@@ -68,20 +58,33 @@ require_once 'admin/conexion.php';
 						 }
 			 }
 	//include("procesos.php?accion='$accion'&id=$id_user");
-	 ?></td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="344"><p><a href="modcurri.php">Mi Curriculum</a></p>
-    <p><a href="home.php?accion=verplazas">Ver Plazas Aplicadas </a></p>
-    <p><a href="procesos.php?accion=bye&id=<?php echo $id_user?>">Eliminar Mi Cuenta</a>   </p>
-    <a href="index.php">Volver</a>   </p></td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+	 ?>
+	 <ul id="options">
+    <li><a href="modcurri.php">Mi Curriculum</a></li>
+    <li><a href="home.php?accion=verplazas">Ver Plazas Aplicadas </a></li>
+    <li><a href="procesos.php?accion=bye&id=<?php echo $id_user?>">Eliminar Mi Cuenta</a></li>
+    <li><a href="Index.php">Volver</a></li>
+    </ul>
+    <p>
+    	<a href="login.php">Cerrar Sesion</a>
+    </p>
+    </div>
+    <div id="imagen">
+    	<img src="images/logo1.png" />
+    	<p>
+    	Todos los derechos reservados
+    	</p>
+    </div>
+    <div id="ambiente">
+    	<img src="images/hoja.png" /> 
+    	<p>
+    	<br />
+    	Worksmart Protege el medio ambiente
+    	<br />
+    	por medio del uso de colores que permiten una menor
+    	<br />
+    	emisi&oacute;n de Kw/h
+    	</p>
+    </div>
 </body>
 </html>
