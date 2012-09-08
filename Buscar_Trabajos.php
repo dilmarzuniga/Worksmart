@@ -57,7 +57,7 @@
 
 		<div id="slider2" style="width: 696px; height: 241px; overflow-x: hidden; overflow-y: hidden; ">
 			
-			<form name="busqueda" method="post" action="busqueda.php">
+			<form name="busqueda" method="post" action="Busqueda.php">
 			<table height="280" class="busqueda">
               <tr><td height="112" colspan="4" class="celda_busqueda"><h2> Selecciona tu búsqueda: </h2></td></tr>
 			  <tr><td class="celda_busqueda"><label> Por categoría: </label></td>
