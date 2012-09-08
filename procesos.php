@@ -61,8 +61,9 @@ echo("<script>document.location.href='modcurri.php?accion=alert'</script>");
 		 		  
 				  
 				  else if($accion=='bye'){
-				  mysql_query("INSERT into mensajes (id_user,mensaje,leido) VALUES ($id,'borrar la cuenta',0)");
-				  echo("Ha sido enviada la solicitud para desactivar su cuenta, clic <a href='home.php'>aqui</a> para regresar");
+				  mysql_query("INSERT into mensajes (id_user,mensaje,leido) VALUES ($id,'Eliminacion por peticion del usuario',0)");
+				  mysql_query("call eliminarUsuario(".$id.");");
+				  echo("Su cuenta a sido eliminada <a href='home.php'>aqui</a> para regresar");
 				  //echo(header("location:home.php"));
 				  }
 			
