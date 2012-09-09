@@ -640,3 +640,13 @@ p.primero_tips:first-letter
 {
 	margin-top: 50px;
 }
+
+/***************ESTILO DE TABLA PARA DETALLE_CURRI.PHP*****************/
+
+.pral
+{
+	color:#a64e4c;
+	font-family:Helvetica;
+	font-weight:bold;
+	font-size:12px;
+}

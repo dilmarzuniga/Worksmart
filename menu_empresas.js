@@ -22,7 +22,7 @@ stm_aix("p0i18","p0i10",[0,"Ver Curriculum Aplicados","","",-1,-1,0,"ver_curri.p
 stm_aix("p0i19","p0i11",[]);
 stm_aix("p0i20","p0i10",[0,"Borrar Plazas","","",-1,-1,0,"borrar_plazas.php"]);
 stm_aix("p0i21","p0i11",[]);
-stm_aix("p0i22","p0i10",[0,"Cerrar Sesion","","",-1,-1,0,"#"]);
+stm_aix("p0i22","p0i10",[0,"Cerrar Sesion","","",-1,-1,0,"cerrar_sesion.php"]);
 stm_aix("p0i23","p0i0",[]);
 stm_aix("p0i24","p0i0",[]);
 stm_aix("p0i25","p0i0",[]);
