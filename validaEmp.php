@@ -1,10 +1,6 @@
 <?PHP
 session_start();
-/*$ho = 'localhost';
-$pa = '';
-$us='root';
-$bdd='empleos';
-*/
+
 require_once 'admin/conexion.php';
 
 echo("<link rel='stylesheet' href='css/estilo.css'>");
@@ -33,22 +29,21 @@ if (isset($usuario) && $error==false)
 	/*$conexion = mysql_connect ($ho, $us, $pa) or die (msg_errores('CS'));
 	mysql_select_db ($bdd) or die (msg_errores('SBD'));*/
 	$salt = substr ($usuario, 0, 1);
-    $clave_crypt = crypt ($pass, $salt);
-    $instruccion = "select * from usuario where username = '$usuario'" . " and password = '$clave_crypt'";
-	//print($instruccion);
+    $clave_crypt = md5($pass);
+    $instruccion = "select * from empresas where id_empresa = '".$usuario."'" . " and password = '".$clave_crypt."';";
+
+
     $consulta = mysql_query ($instruccion, $conexion) or die (msg_errores('FS'));
     $nfilas = mysql_num_rows ($consulta);
-	$resultado = mysql_fetch_array ($consulta);
-//////////////////
-//    $sql = "select name from company";
- //   $q = mysql_query ($sql, $conexion) or die (msg_errores('FS'));
-//	$r = mysql_fetch_array ($q);
+    $resultado = mysql_fetch_array ($consulta);
+
+
    mysql_close ($conexion);
 	if ($nfilas == 1)
 	{
 		$_SESSION['id']=$resultado[0];
-        $_SESSION['nombre'] = $resultado[1];
-        $_SESSION['nivel'] = $resultado[4];
+		$_SESSION['nombre'] = $resultado[1];
+		$_SESSION['nivel'] = $resultado["usrnivel"];
 		$_SESSION['ho'] = $ho;
 		$_SESSION['com'] = $resultado[0];
 
@@ -56,10 +51,10 @@ if (isset($usuario) && $error==false)
 		$_SESSION['bdd'] = $bdd;
 		$_SESSION['pa'] = $pa;
 		//session_start();
-		if($resultado[4]==2){
+		if($resultado["usrnivel"]==2){
 		header("location: Menu_Empresas.php");
 		}
-		else if($resultado[4]!=2){
+		else if($resultado["usrnivel"]!=2){
 		header("location: Empresas.php?error=1");
 		}
 				

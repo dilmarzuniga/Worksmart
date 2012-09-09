@@ -49,21 +49,43 @@
 				</center>
               	<div class="contact_form">         
                     <div class="form_row">
-					<form id="form1" name="form1" method="post" action="enviar_inscribir_empresa.php"> 
+					<form id="form1" name="form1" method="post" action="incribir_empresa.php"> 
                     <label class="contact">Nombre de la Empresa:</label>
                     <input name="nombre_empresa" id="nombre_empresa" type="text" class="contact_input" />
                     </div>  
-  <div class="form_row">
+
+ 		    <div class="form_row">
+                    <label class="contact">Contrase&ntilde;a:</label>
+                    <input name="contra" id="contra" type="text" class="contact_input" />
+                    </div>
+
+		    <div class="form_row">
+                    <label class="contact">Repetir</label>
+                    <input name="contra2" id="contra2" type="text" class="contact_input" />
+                    </div>
+
+		    <div class="form_row">
                     <label class="contact">Encargado:</label>
                     <input name="encargado" id="encargado" type="text" class="contact_input" />
                     </div>
-					
-					     <div class="form_row">
+
+ 		    <div class="form_row">
+                    <label class="contact">Direccion:</label>
+                    <input name="direccion" id="direccion" type="text" class="contact_input" />
+                    </div>
+
+ 		    <div class="form_row">
+                    <label class="contact">Departamento:</label>
+                    <input name="departamento" id="departamento" type="text" class="contact_input" />
+                    </div>
+
+
+		    <div class="form_row">
                     <label class="contact">Telefono:</label>
                     <input name="telefono" id="telefono" type="text" class="contact_input" />
                     </div>
 					
-					  <div class="form_row">
+		    <div class="form_row">
                     <label class="contact">fax:(Opcional)</label>
                     <input name="fax" id="fax" type="text" class="contact_input" />
                     </div>
@@ -81,7 +103,7 @@
 
                     <div class="form_row">
                     <label class="contact">Describa el tipo de empresa:</label>
-                    <textarea name="mensaje" id="mensaje" class="contact_textarea" rows="" cols="" >
+                    <textarea name="tipo_empresa" id="tipo_empresa" class="contact_textarea" rows="" cols="" >
 					</textarea>
                     </div>    
 	
