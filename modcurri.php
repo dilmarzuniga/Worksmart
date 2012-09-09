@@ -36,8 +36,7 @@ include_once 'admin/conexion.php';
 	if($accion=='alert'){
 	echo("<script>alert('Datos Actualizados');</script>");
 	}
-	/*$conexion = mysql_connect ('localhost','root','') or die (msg_errores('CS'));
-        mysql_select_db ('empleos') or die (msg_errores('SBD'));*/
+
 $queEmp = "SELECT * FROM curriculum WHERE username = '$user'";	
 $resEmp = mysql_query($queEmp, $conexion) or die(mysql_error());
 $totEmp = mysql_num_rows($resEmp);	   

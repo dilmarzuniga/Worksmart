@@ -54,7 +54,7 @@ bachillerato='$bachillerato',
 est_superiores='$superiores',
 pais='$pais',
 mensaje_personal='$mensaje' WHERE  username =  '".$id."'");
-//mysql_query($comando,$conexion) or die (mysql_error()) ;
+
 echo("<script>document.location.href='modcurri.php?accion=alert'</script>");
 		 		  }
 				  

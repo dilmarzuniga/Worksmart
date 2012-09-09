@@ -48,7 +48,7 @@ if (isset($usuario) && $error==false)
 	{
 		$_SESSION['id_user']=$resultado[0];
         $_SESSION['nombre'] = $resultado[1];
-        $_SESSION['nivel'] = $resultado[3];
+        $_SESSION['nivel'] = $resultado['nivel'];
 		$_SESSION['ho'] = $ho;
 		$_SESSION['com'] = $r[0];
 
@@ -56,7 +56,10 @@ if (isset($usuario) && $error==false)
 		$_SESSION['bdd'] = $bdd;
 		$_SESSION['pa'] = $pa;
 		//session_start();
-		header("location: home.php");
+		if($_SESSION['nivel'] == '2')
+			header("location: Menu_Empresas.php");
+		else if($_SESSION['nivel'] == '3')
+			header("location: home.php");
 		
 	}
 	else{

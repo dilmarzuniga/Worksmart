@@ -329,11 +329,12 @@ $("img[rel]").overlay({
 			  $e_user='';
 			  $e_pwd='';
 			  @$error=$_GET['error'];
+			  
 			  if($error==1){
-			  session_start();
-				session_unset(); 
-				session_destroy(); 
-			  echo("<font color='red'>No posee permisos para acceder a la pagina</font>");
+				//session_start();
+				//ession_unset(); 
+				//session_destroy(); 
+				echo("<font color='red'>No posee permisos para acceder a la pagina</font>");
 			  }
 			  if($error==2){
 			  echo("<script>alert('Debe Iniciar sesion para acceder a la pagina');</script>");

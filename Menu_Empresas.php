@@ -31,6 +31,9 @@
 	  <div class="menutips"> 
 	<?php
 	session_start(); 
+	if($_SESSION['nivel'] != '2')
+		header("location: Empresas.php?error=1");
+		
 	@$id_empresa=$_SESSION['nombre'];
 	if( strlen($id_empresa)==0){
 	echo("<script>alert('Inicie Sesion para acceder al menu de empresas');</script>");

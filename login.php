@@ -2,6 +2,6 @@
 session_start();
 session_unset(); 
 session_destroy(); 
-echo header("location:Empresas.php");
+echo header("location:index.php");
 
 ?>
