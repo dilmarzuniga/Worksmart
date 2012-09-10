@@ -102,8 +102,9 @@ $totEmp = mysql_num_rows($resEmp);
     </p>
     <h3> Datos de Curriculum</h3>
       <form id="form1" name="form1" method="post" action="procesos.php?accion=save&id=<?php echo $user?>">
-      <p>
-      		<br />
+      <table>
+      <tr>
+      <td>
             Nombres
             <br />
             <label>
@@ -155,10 +156,13 @@ $totEmp = mysql_num_rows($resEmp);
             <br />
             <textarea name="high" id="high" ><?php echo $superiores; ?></textarea>
             <br />
+            <br />
             DUI
             <br />
             <input name="iud" type="text" id="iud" value="<?php echo $dui; ?>"/>
             <br />
+            </td>
+            <td>
             Experiencia Laboral
             <br />
             <input name="exp" type="text" id="exp" value="<?php echo $experiencia; ?>"/>
@@ -204,10 +208,16 @@ $totEmp = mysql_num_rows($resEmp);
             <input name="mail_ref" type="text" id="mail_ref" value="<?php echo $correo_ref; ?>"/>
             <br />
             <br />
+            </td>
+            </tr>
+            </table>
+            <p>
+            <br />
+            <br />
             <label>
               <input name="Guardar" type="submit" id="Guardar" value="Guardar" />
             </label>
-	</p>
+            </p>
     </form>
     <div id="icon"> 
     	<img src="images/logo1.png" />

@@ -120,19 +120,26 @@ h3
 
 table
 {
-	border:solid 1px #d3d3d3;
+	border:solid 1px #fff;
+	padding:10px;
+	border-radius:10px;
+	margin:0 auto;
 }
+td:first-child
+{
+	border-right:dashed 1px #fff;
+}	
 td
 {
-	border:solid 1px #d3d3d3;
-}	
+	padding:20px;
+}
 
 form
 {
 	border:solid 1px #fff;
 	border-radius:10px;
 	background:#444;
-	width:400px;
+	width:500px;
 	margin:0 auto;
 	padding:20px;
 	color:#fff;
@@ -142,13 +149,6 @@ form
 form input
 {
 	margin-bottom:15px;
-}
-form p
-{
-	border:solid 1px #fff;
-	padding:10px;
-	text-align:center;
-	background:#555;
 }
 
 #icon
