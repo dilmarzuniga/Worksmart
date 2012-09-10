@@ -17,13 +17,14 @@ include_once 'admin/conexion.php';
 <link rel="stylesheet" href="css/home.css" />
 
 <body>
-Bienvenido <?php
+<div id="ban">Bienvenido <?php
 	if( strlen($user)==0){
 	echo("<script>alert('Inicie Sesion para acceder al menu de usuario');</script>");
 	header("location:Index.php?mostrar=2");
 	}	
 		echo("<font size=5>$user</font>");
 		?> 
+		</div>
 	  <?php
 	if($accion=='alert'){
 	echo("<script>alert('Datos Actualizados');</script>");
@@ -89,7 +90,7 @@ $totEmp = mysql_num_rows($resEmp);
 	}	
 	include("procesos.php");
 	?>
-		  <ul id="options">
+		  <ul id="options" class="fix">
     <li><a href="home.php">Inicio</a></li>
     <li><a href="modcurri.php">Mi Curriculum</a></li>
     <li><a href="procesos.php?id=bye&id=<?php echo $id_user?>">Eliminar Mi Cuenta</a></li>
@@ -208,5 +209,8 @@ $totEmp = mysql_num_rows($resEmp);
             </label>
 	</p>
     </form>
+    <div id="icon"> 
+    	<img src="images/logo1.png" />
+    </div>
 </body>
 </html>

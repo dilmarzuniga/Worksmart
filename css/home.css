@@ -15,11 +15,12 @@ body
 	margin:0 auto;
 	margin-top:30px;
 	width:80%;
-	background:#fff;
+	background:#333;
 	padding:20px;
 	border-radius:15px;
 	border:solid 1px #d3d3d3;
 	box-shadow:1px 1px 2px 1px #000000;
+	color:#fff;
 }
 
 #name
@@ -108,7 +109,7 @@ h3
 {
 	position:absolute;
 	padding-left:20px;
-	color:#d3d3d3;
+	color:#666;
 	font-size:12px;
 }	
 #ambiente
@@ -148,4 +149,32 @@ form p
 	padding:10px;
 	text-align:center;
 	background:#555;
+}
+
+#icon
+{
+	position:fixed;
+	top:200px;
+	left:0px;
+	z-index:-100;
+}
+#icon img
+{
+	width:200px;
+	opacity:.2;
+}
+#ban
+{
+	position:fixed;
+	top:0px;
+	left:0px;
+	padding:10px;
+	background:#555;
+	color:#fff;
+}
+.fix
+{
+	position:fixed;
+	top:45px;
+	left:0px;
 }
