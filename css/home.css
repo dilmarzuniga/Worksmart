@@ -107,10 +107,11 @@ h3
 }
 #imagen,#ambiente
 {
-	position:absolute;
+	float:left;
 	padding-left:20px;
 	color:#666;
 	font-size:12px;
+	margin:30px;
 }	
 #ambiente
 {
@@ -177,4 +178,27 @@ form input
 	position:fixed;
 	top:45px;
 	left:0px;
+}
+.login
+{
+	padding:20px;
+	border:solid 1px #fff;
+	text-align:center;
+	box-shadow:1px 1px 5px 1px #000;
+}
+.login *
+{
+	margin:10px;
+}
+#ad
+{
+	margin:20px auto;
+	width:300px;
+	border:solid 1px #fff;
+	background:#888;
+	padding:10px;
+	color:#fff;
+	font-family:"arial";
+	font-weight:bold;
+	box-shadow:1px 1px 5px 1px #000;
 }
