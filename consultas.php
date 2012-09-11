@@ -36,7 +36,7 @@ echo("<link rel='stylesheet' href='css/estilos.css'>");
         $nfilas = mysql_num_rows ($consulta);
         if ($nfilas > 0)
         {
-            echo ("<CENTER> <TABLE id=\"empT\">");
+            echo ("<CENTER> <TABLE>");
             echo ("<TR>");
             echo ("<TH width=186>Nombre</TH>");
             echo ("<TH width=161>Telefono</TH>");
