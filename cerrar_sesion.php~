@@ -3,6 +3,6 @@
 	session_start();
 	session_destroy();
 	session_unset();
-	echo header("location:Index.php");
+	echo header("location:empresas.php");
 
 ?>

@@ -207,15 +207,15 @@ $totEmp = mysql_num_rows($resEmp);
             <br />
             <input name="mail_ref" type="text" id="mail_ref" value="<?php echo $correo_ref; ?>"/>
             <br />
-            <br />
-            </td>
-            </tr>
-            </table>
             
             <br />
             Suba una foto para su curriculum:
             <input name="imagen" id="imagen" type="file" />
             <br />
+            <br />
+            </td>
+            </tr>
+            </table>
             <p>
             <br />
             <br />

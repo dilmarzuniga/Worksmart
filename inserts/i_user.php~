@@ -15,6 +15,17 @@ $nom=0;
 $pw=0;
 $usr=0;
 
+$img = trim($_FILES['imagen']['name']); // Nombre de la imagen eliminando  espacios al final e inicio
+$img = substr($filename, -20); // recortando el nombre
+$img = ereg_replace(" ","", $filename); // Eliminando espacios 
+$dir = "../images";
+$PATH = $dir+'/'+$username+$img;
+header("Location: $PATH"); 
+if (move_uploaded_file($_FILES['imagen']['tmp_name'], $PATH))
+{
+		$query_img = "insert into img(user,ruta) values('{$username}','{$PATH}')";
+		$data = mysql_query($query_img, $conexion);
+}	
 
 if ($username=='')
 {
