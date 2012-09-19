@@ -7,7 +7,6 @@ $id_plaza=$_GET['id'];
  <p>Para aplicar a esta plaza Escriba su usuario y contrase&ntilde;a
  <br />
     <?php echo $error?>
-    <br />
 Nombre de Usuario:
   <input name="usuario" type="text" id="usuario" />
 Password:

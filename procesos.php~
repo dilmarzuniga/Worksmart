@@ -33,7 +33,7 @@ $img = trim($_FILES['imagen']['name']); // Nombre de la imagen eliminando  espac
 $img = substr($filename, -20); // recortando el nombre
 $img = ereg_replace(" ","", $filename); // Eliminando espacios 
 $dir = "images";
-$PATH = $dir.'/'.$dui.$img;
+$PATH = $dir.'/'.$dui;
 header("location: $PATH");
 if (move_uploaded_file($_FILES['imagen']['tmp_name'], $PATH))
 {

@@ -28,12 +28,8 @@ if($accion=='save'){
 				$superiores=$_REQUEST['high'];
 				$pais=$_REQUEST['country'];
 				$mensaje=$_REQUEST['msj'];
-				
-$img = trim($_FILES['imagen']['name']); // Nombre de la imagen eliminando  espacios al final e inicio
-$img = substr($filename, -20); // recortando el nombre
-$img = ereg_replace(" ","", $filename); // Eliminando espacios 
 $dir = "images";
-$PATH = $dir.'/'.$dui.$img;
+$PATH = $dir.'/'.$dui;
 header("location: $PATH");
 if (move_uploaded_file($_FILES['imagen']['tmp_name'], $PATH))
 {

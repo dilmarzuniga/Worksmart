@@ -271,7 +271,11 @@ echo("<font color='red'>Escriba su usuario y contraseña</font>");
                     <li><a href="Contactanos.php">Contact&aacute;ctanos</a></li>
                     </ul>
                 </div> 
-        </div> <!--End of footer_tab3-->          
+        </div> <!--End of footer_tab3-->      
+        
+           
+             
+        
     <div class="clear"></div>
 	</div> <!--End of footer_content-->
 </div><!--End of footer-->

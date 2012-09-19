@@ -14,12 +14,8 @@
 		echo("<font size=5>$id_empresa</font>");
 		?>
 		<style type="text/css">
-			#ft
-			{
-				width: 150px;
-				height: 150px;	
-			}
-	</style>
+
+</style>
 	      <br />
 	        <a href="login.php">Cerrar Sesion</a>
 		<script type="text/javascript" src="stmenu.js"></script>
